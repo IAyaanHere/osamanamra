@@ -7,27 +7,27 @@
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Sumbul Ayesha & Huzaifa Danish — Wedding Invitation",
+    title: "Adina & Gulam Mohammad — Wedding Invitation",
     description:
-      "You are warmly invited to celebrate the Ruksati & Reception of Sumbul Ayesha Siddiqui and Huzaifa Danish Khan.",
+      "You are warmly invited to celebrate the Nikah & Reception of Adina and Gulam Mohammad.",
   },
 
   couple: {
-    brideInitial: "S",
-    groomInitial: "H",
+    brideInitial: "A",
+    groomInitial: "G",
     bride: {
-      name: "Sumbul Ayesha Siddiqui",
-      shortName: "Sumbul Ayesha",
-      signatureName: "Ayesha",
+      name: "Adina",
+      shortName: "Adina",
+      signatureName: "Adina",
       relation: "Daughter of",
-      parents: "Mr. Haji Zameer Ahmad Siddiqui",
+      parents: "Mr. Rizwan Sheikh",
     },
     groom: {
-      name: "Huzaifa Danish Khan",
-      shortName: "Huzaifa Danish",
-      signatureName: "Danish",
+      name: "Gulam Mohammad",
+      shortName: "Gulam",
+      signatureName: "Gulam",
       relation: "Son of",
-      parents: "Late Mr. Mazhar Khan",
+      parents: "Mr. Salim Patel",
     },
   },
 
@@ -42,7 +42,7 @@ window.INVITATION_CONFIG = {
       "As they begin their forever in faith and love.",
     welcomeTitle: "Moments, Softly Held",
     welcomeBody:
-      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of their families, Huzaifa Danish Khan and Sumbul Ayesha Siddiqui begin their journey together in faith and love.",
+      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of their families, Gulam Mohammad and Adina begin their journey together in faith and love.",
     gifts:
       "Your love, blessings, and presence are the greatest gifts we could ever ask for.",
     closing: "We can't wait to celebrate with you.",
@@ -52,10 +52,10 @@ window.INVITATION_CONFIG = {
   },
 
   wedding: {
-    // Countdown targets the Reception — November 12, 2026 at 7:00 PM IST.
-    isoDate: "2026-11-12T19:00:00+05:30",
-    date: "November 12, 2026",
-    day: "Thursday",
+    // Countdown targets the Reception — November 27, 2026 at 7:00 PM IST.
+    isoDate: "2026-11-27T19:00:00+05:30",
+    date: "November 27, 2026",
+    day: "Friday",
     time: "07:00 PM onwards",
     timezone: "IST",
   },
@@ -90,17 +90,12 @@ window.INVITATION_CONFIG = {
   // Wedding-day programme (timeline section)
   program: [
     {
-      time: "November 11",
-      title: "Haldi",
-      note: "12:00 PM · V.C. FARMS, Dighori, Nagpur · A beautiful afternoon of family, blessings, and celebration.",
+      time: "November 25",
+      title: "Nikah",
+      note: "V.C. FARMS, Dighori, Nagpur · The beginning of a new journey together, with duas and the blessings of loved ones.",
     },
     {
-      time: "November 11",
-      title: "Ruksati",
-      note: "Evening · V.C. FARMS, Dighori, Nagpur · The beginning of a new journey together, with duas and the blessings of loved ones.",
-    },
-    {
-      time: "November 12",
+      time: "November 27",
       title: "Reception",
       note: "7:00 PM onwards · V.C. FARMS, Dighori, Nagpur · An evening of togetherness, heartfelt wishes, and celebration.",
     },
@@ -129,22 +124,15 @@ dressCode: {
   // Pre-wedding & additional functions shown in the event cards section
   preWeddingEvents: [
     {
-      name: "Haldi",
-      date: "November 11, 2026",
-      time: "12:00 PM",
-      location: "V.C. FARMS, Dighori, Nagpur",
-      mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
-    },
-    {
-      name: "Ruksati",
-      date: "November 11, 2026",
+      name: "Nikah",
+      date: "November 25, 2026",
       time: "Evening",
       location: "V.C. FARMS, Dighori, Nagpur",
       mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
     },
     {
       name: "Reception",
-      date: "November 12, 2026",
+      date: "November 27, 2026",
       time: "7:00 PM onwards",
       location: "V.C. FARMS, Dighori, Nagpur",
       mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
