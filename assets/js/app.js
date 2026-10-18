@@ -41,6 +41,7 @@ document.addEventListener("dragstart", (event) => {
   }
 
   function setName(element, personConfig) {
+    if (!element || !personConfig || !personConfig.name) return;
     const fullName = personConfig.name;
     const shortName = personConfig.shortName || fullName.split(" ")[0];
     const remainingName = fullName.replace(shortName, "").trim();
@@ -59,20 +60,27 @@ document.addEventListener("dragstart", (event) => {
   }
 
   function setCoupleNames(element) {
-    const brideName = config.couple.bride.signatureName
-      || config.couple.bride.shortName
-      || config.couple.bride.name.split(" ")[0];
-    const groomName = config.couple.groom.signatureName
-      || config.couple.groom.shortName
-      || config.couple.groom.name.split(" ")[0];
+    if (!element) return;
+    const brideName = config.couple?.bride?.signatureName
+      || config.couple?.bride?.shortName
+      || (config.couple?.bride?.name ? config.couple.bride.name.split(" ")[0] : "");
+    const groomName = config.couple?.groom?.signatureName
+      || config.couple?.groom?.shortName
+      || (config.couple?.groom?.name ? config.couple.groom.name.split(" ")[0] : "");
 
-    element.replaceChildren(
-      document.createTextNode(groomName),
-      document.createTextNode(" "),
-      createElement("span", "", "&"),
-      document.createTextNode(" "),
-      document.createTextNode(brideName),
-    );
+    if (groomName && brideName) {
+      element.replaceChildren(
+        document.createTextNode(groomName),
+        document.createTextNode(" "),
+        createElement("span", "", "&"),
+        document.createTextNode(" "),
+        document.createTextNode(brideName),
+      );
+    } else if (groomName) {
+      element.replaceChildren(document.createTextNode(groomName));
+    } else if (brideName) {
+      element.replaceChildren(document.createTextNode(brideName));
+    }
   }
 
   function applyConfig() {
@@ -101,6 +109,16 @@ Object.entries(config.theme).forEach(([name, value]) => {
     setName(select("#groomName"), config.couple.groom);
     setCoupleNames(select("#welcomeSignature"));
     setCoupleNames(select("#closingNames"));
+
+    const ampersand = select(".name-ampersand");
+    const brideBlock = select("#brideName")?.parentElement;
+    if (!config.couple?.bride?.name) {
+      if (ampersand) ampersand.style.display = "none";
+      if (brideBlock) brideBlock.style.display = "none";
+    } else {
+      if (ampersand) ampersand.style.display = "";
+      if (brideBlock) brideBlock.style.display = "";
+    }
 
     select("#closingDetails").textContent =
       `${config.wedding.date} · ${config.venue.name}`;
@@ -926,6 +944,7 @@ function createPetalShower() {
 }
 
   function initializeCountdown() {
+    if (!select("#countdownDays")) return;
     const targetDate = new Date(config.wedding.isoDate).getTime();
 
     function updateCountdown() {

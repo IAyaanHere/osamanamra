@@ -2771,3 +2771,90 @@ textarea:focus-visible {
     padding: 36px 22px 24px;
   }
 }
+
+/* ==================== AWAITING TO WELCOME YOU ==================== */
+
+.awaiting-section {
+  background: var(--ivory);
+  text-align: center;
+}
+
+.awaiting-card {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 60px 32px;
+  text-align: center;
+  background: radial-gradient(
+    circle at 50% 0%,
+    color-mix(in srgb, var(--mauve) 16%, transparent),
+    transparent 45%
+  ), var(--ivory);
+  border: 1px solid color-mix(in srgb, var(--champagne) 45%, transparent);
+  box-shadow: 0 16px 40px color-mix(in srgb, var(--plum) 8%, transparent);
+}
+
+.awaiting-card::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid color-mix(in srgb, var(--champagne) 24%, transparent);
+  pointer-events: none;
+}
+
+.awaiting-card .eyebrow {
+  position: relative;
+  z-index: 1;
+  color: var(--champagne);
+}
+
+.awaiting-card h2 {
+  position: relative;
+  z-index: 1;
+  margin: 12px 0 32px;
+  color: var(--plum);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.awaiting-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.awaiting-list li {
+  color: var(--plum);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 3.4vw, 1.4rem);
+  letter-spacing: 0.03em;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.awaiting-list li::after {
+  content: "✦";
+  display: block;
+  font-size: 0.65rem;
+  font-style: normal;
+  color: var(--champagne);
+  margin-top: 10px;
+  opacity: 0.65;
+}
+
+.awaiting-list li:last-child::after {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .awaiting-card {
+    padding: 44px 20px;
+  }
+}

@@ -7,27 +7,27 @@
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Adina & Gulam Mohammad — Wedding Invitation",
+    title: "Dawat-e-Nikah — Osama Akbani & Namra Akbani",
     description:
-      "You are warmly invited to celebrate the Nikah & Reception of Adina and Gulam Mohammad.",
+      "You are warmly invited to celebrate the Dawat-e-Nikah of Osama Akbani and Namra Akbani.",
   },
 
   couple: {
-    brideInitial: "A",
-    groomInitial: "G",
+    brideInitial: "N",
+    groomInitial: "O",
     bride: {
-      name: "Adina",
-      shortName: "Adina",
-      signatureName: "Adina",
+      name: "Namra Akbani",
+      shortName: "Namra",
+      signatureName: "Namra",
       relation: "Daughter of",
-      parents: "Mr. Rizwan Sheikh",
+      parents: "Mohd Iqbal Akbani & Khairunnisa Akbani",
     },
     groom: {
-      name: "Gulam Mohammad",
-      shortName: "Gulam",
-      signatureName: "Gulam",
+      name: "Osama Akbani",
+      shortName: "Osama",
+      signatureName: "Osama",
       relation: "Son of",
-      parents: "Mr. Salim Patel",
+      parents: "Mohd Rashid Akbani & Sharifa Akbani",
     },
   },
 
@@ -35,28 +35,27 @@ window.INVITATION_CONFIG = {
     bismillah: "﷽",
     bismillahTranslation:
       "",
-    welcomeLine: "With the blessings of their families,\nwe joyfully invite you to the wedding of",
+    welcomeLine: "With the blessings of our families,\nwe joyfully invite you to the Dawat-e-Nikah of",
     invitation:
       "",
     heroClosing:
-      "As they begin their forever in faith and love.",
-    welcomeTitle: "Moments, Softly Held",
+      "As we begin this blessed new journey in faith and love.",
+    welcomeTitle: "A Blessed Beginning",
     welcomeBody:
-      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of their families, Gulam Mohammad and Adina begin their journey together in faith and love.",
+      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of Almighty Allah and our families, Osama Akbani and Namra Akbani begin their journey together in faith and love.",
     gifts:
       "Your love, blessings, and presence are the greatest gifts we could ever ask for.",
-    closing: "We can't wait to celebrate with you.",
+    closing: "We look forward to celebrating with you.",
     dua: "بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
     duaTranslation:
       "May Allah bless you both, shower His blessings upon you, and join you together in goodness.",
   },
 
   wedding: {
-    // Countdown targets the Reception — November 27, 2026 at 7:00 PM IST.
-    isoDate: "2026-11-27T19:00:00+05:30",
-    date: "November 27, 2026",
+    isoDate: "2026-12-25T19:00:00+05:30",
+    date: "December 25, 2026",
     day: "Friday",
-    time: "07:00 PM onwards",
+    time: "After Jum'ah · Dinner 7:00 PM onwards",
     timezone: "IST",
   },
 
@@ -65,47 +64,30 @@ window.INVITATION_CONFIG = {
     introVideo: "./media/intro-placeholder.mp4",
     introPoster:
       "./media/intro-placeholder.webp",
-    music: "./media/shukran-laka-rabbi.mp3",
+    music: "./media/sakina.mp3",
 
-    // Replace gallery URLs with your own hosted files or image URLs.
-    gallery: [
-      {
-        src: "./media/gallery/01.webp",
-        alt: "A softly lit wedding detail",
-        caption: "",
-      },
-      {
-        src: "./media/gallery/02.webp",
-        alt: "A joyful wedding celebration",
-        caption: "",
-      },
-      {
-        src: "./media/gallery/03.webp",
-        alt: "Elegant wedding florals and table setting",
-        caption: "",
-      },
-    ],
+    gallery: [],
   },
 
   // Wedding-day programme (timeline section)
   program: [
     {
-      time: "November 25",
+      time: "After Jum'ah",
       title: "Nikah",
-      note: "V.C. FARMS, Dighori, Nagpur · The beginning of a new journey together, with duas and the blessings of loved ones.",
+      note: "Masjid-e-Mustafa, Nagpur · Solemnisation of Nikah with the blessings of elders & loved ones.",
     },
     {
-      time: "November 27",
-      title: "Reception",
-      note: "7:00 PM onwards · V.C. FARMS, Dighori, Nagpur · An evening of togetherness, heartfelt wishes, and celebration.",
+      time: "07:00 PM onwards",
+      title: "Dawat-e-Nikah (Dinner)",
+      note: "Canal Garden, Kalamna Road, Kamptee, Nagpur · An evening of dinner, celebration, and togetherness.",
     },
   ],
 
   venue: {
-    name: "V.C. FARMS",
+    name: "Canal Garden",
     address:
-      "Near Challenger Gym-2, Behind Indian Oil Petrol Pump, Dighori, Nagpur.",
-    mapUrl: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
+      "Kalamna Road, Kamptee, Nagpur",
+    mapUrl: "https://share.google/4gm1Tw9QegqYo3MBl",
   },
 
 dressCode: {
@@ -124,18 +106,18 @@ dressCode: {
   // Pre-wedding & additional functions shown in the event cards section
   preWeddingEvents: [
     {
-      name: "Nikah",
-      date: "November 25, 2026",
-      time: "Evening",
-      location: "V.C. FARMS, Dighori, Nagpur",
-      mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
+      name: "Nikah Ceremony",
+      date: "December 25, 2026 (Friday)",
+      time: "After Jum'ah",
+      location: "Masjid-e-Mustafa, Nagpur",
+      mapLink: "https://share.google/4gm1Tw9QegqYo3MBl",
     },
     {
-      name: "Reception",
-      date: "November 27, 2026",
-      time: "7:00 PM onwards",
-      location: "V.C. FARMS, Dighori, Nagpur",
-      mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
+      name: "Dawat-e-Nikah & Dinner",
+      date: "December 25, 2026 (Friday)",
+      time: "07:00 PM onwards",
+      location: "Canal Garden, Kalamna Road, Kamptee, Nagpur",
+      mapLink: "https://share.google/4gm1Tw9QegqYo3MBl",
     },
   ],
 

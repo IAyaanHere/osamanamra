@@ -1,6 +1,6 @@
-# Velvet Frontend Reproduction
+# Osama & Namra — Wedding Invitation
 
-This is a local, complete reproduction of the frontend delivered at `https://naqshdigital.in/velvet/`.
+Dawat-e-Nikah of Osama Akbani and Namra Akbani on December 25, 2026.
 
 ## Framework Analysis
 The original site is built using **Vanilla HTML, CSS, and JavaScript**. It is not a bundled React, Next.js, Vue, or Vite application. It loads its configuration from a `config.js` file and sets up interactions via a single `app.js` file. All data bindings are done through `data-bind` attributes and ID selections in the HTML.
