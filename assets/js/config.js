@@ -7,9 +7,9 @@
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Dawat-e-Nikah — Osama Akbani & Namra Akbani",
+    title: "Dawat-e-Nikah — Namra Akbani & Osama Akbani",
     description:
-      "You are warmly invited to celebrate the Dawat-e-Nikah of Osama Akbani and Namra Akbani.",
+      "You are warmly invited to celebrate the Dawat-e-Nikah of Namra Akbani and Osama Akbani.",
   },
 
   couple: {
@@ -35,14 +35,14 @@ window.INVITATION_CONFIG = {
     bismillah: "﷽",
     bismillahTranslation:
       "",
-    welcomeLine: "With the blessings of our families,\nwe joyfully invite you to the Dawat-e-Nikah of",
+    welcomeLine: "With the blessings of Allah,\nwe cordially invite you to the\n<span class=\"hero-event-title\">Dawat-e-Nikah</span>\nof",
     invitation:
       "",
     heroClosing:
       "As we begin this blessed new journey in faith and love.",
     welcomeTitle: "A Blessed Beginning",
     welcomeBody:
-      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of Almighty Allah and our families, Osama Akbani and Namra Akbani begin their journey together in faith and love.",
+      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of Almighty Allah and our families, Namra Akbani and Osama Akbani begin their journey together in faith and love.",
     gifts:
       "Your love, blessings, and presence are the greatest gifts we could ever ask for.",
     closing: "We look forward to celebrating with you.",

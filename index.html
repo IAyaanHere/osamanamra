@@ -4,26 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Dawat-e-Nikah — Osama Akbani &amp; Namra Akbani</title>
+    <title>Dawat-e-Nikah — Namra Akbani &amp; Osama Akbani</title>
     <meta
       name="description"
-      content="You are cordially invited to celebrate the Dawat-e-Nikah of Osama Akbani and Namra Akbani on December 25, 2026."
+      content="You are cordially invited to celebrate the Dawat-e-Nikah of Namra Akbani and Osama Akbani on December 25, 2026."
     />
 
-    <meta property="og:title" content="Dawat-e-Nikah — Osama Akbani &amp; Namra Akbani" />
+    <meta property="og:title" content="Dawat-e-Nikah — Namra Akbani &amp; Osama Akbani" />
     <meta
       property="og:description"
-      content="You are cordially invited to celebrate the Dawat-e-Nikah of Osama Akbani and Namra Akbani on December 25, 2026."
+      content="You are cordially invited to celebrate the Dawat-e-Nikah of Namra Akbani and Osama Akbani on December 25, 2026."
     />
     <meta property="og:type" content="website" />
 
 
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./assets/css/styles.css?v=14" />
+    <link rel="stylesheet" href="./assets/css/styles.css?v=21" />
 
     <!-- Edit client details in config.js. Keep config.js before app.js. -->
-    <script src="./assets/js/config.js?v=13" defer></script>
-    <script src="./assets/js/app.js?v=13" defer></script>
+    <script src="./assets/js/config.js?v=21" defer></script>
+    <script src="./assets/js/app.js?v=21" defer></script>
   </head>
 
   <body class="intro-locked">
@@ -69,17 +69,17 @@
 
           <div class="couple-names">
             <div>
-              <h1 id="groomName"></h1>
-              <p data-bind="couple.groom.relation"></p>
-              <small data-bind="couple.groom.parents"></small>
+              <h1 id="brideName"></h1>
+              <p data-bind="couple.bride.relation"></p>
+              <small data-bind="couple.bride.parents"></small>
             </div>
 
             <span class="name-ampersand">&amp;</span>
 
             <div>
-              <h1 id="brideName"></h1>
-              <p data-bind="couple.bride.relation"></p>
-              <small data-bind="couple.bride.parents"></small>
+              <h1 id="groomName"></h1>
+              <p data-bind="couple.groom.relation"></p>
+              <small data-bind="couple.groom.parents"></small>
             </div>
           </div>
 
@@ -231,22 +231,46 @@
         <img src="./assets/images/floral-divider.webp" alt="">
       </div>
 
-      <!-- Awaiting to Welcome You -->
+      <!-- Remembrance & Awaiting to Welcome You -->
       <section class="awaiting-section section-pad">
         <div class="section-shell">
           <div class="awaiting-card reveal">
-            <span class="eyebrow">Warmest Regards</span>
-            <div class="venue-divider" aria-hidden="true">
+
+            <!-- In Loving Memories -->
+            <div class="remembrance-block">
+              <span class="eyebrow">Remembering With Love</span>
+              <h2>In Loving Memories</h2>
+              <div class="awaiting-divider" aria-hidden="true">
+                <span>✦</span>
+              </div>
+              <div class="remembrance-names">
+                <p class="remembrance-name">Late M. Kasam Suleman Akbani</p>
+                <span class="remembrance-ampersand">&amp;</span>
+                <p class="remembrance-name">Late Khatija Bai M. Kasam Akbani</p>
+              </div>
+            </div>
+
+            <!-- Inter-section divider -->
+            <div class="remembrance-separator" aria-hidden="true">
               <span>✦</span>
             </div>
-            <h2>Awaiting to Welcome You</h2>
-            <ul class="awaiting-list">
-              <li>Haji Mohd Iqbal Mohd Kasam Akbani</li>
-              <li>Mohd Lukman Mohd Iqbal Akbani</li>
-              <li>Haji Mohd Rizwan Mohd Haroon Akbani</li>
-              <li>Haji Mohd Rizwan Mohd Shakir Hingora</li>
-              <li>Mohd Imran Mohd Idris Akbani</li>
-            </ul>
+
+            <!-- Awaiting to Welcome You -->
+            <div class="awaiting-block">
+              <span class="eyebrow">Warm Regards</span>
+              <h2>Awaiting to Welcome You</h2>
+              <div class="awaiting-divider" aria-hidden="true">
+                <span>✦</span>
+              </div>
+              <ul class="awaiting-list">
+                <li>Haji Mohd Iqbal Mohd Kasam Akbani</li>
+                <li>Mohd Lukman Mohd Iqbal Akbani</li>
+                <li>Haji Mohd Rizwan Mohd Haroon Akbani</li>
+                <li>Haji Mohd Rizwan Mohd Shakir Hingora</li>
+                <li>Mohd Imran Mohd Idris Akbani</li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>

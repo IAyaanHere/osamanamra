@@ -68,18 +68,18 @@ document.addEventListener("dragstart", (event) => {
       || config.couple?.groom?.shortName
       || (config.couple?.groom?.name ? config.couple.groom.name.split(" ")[0] : "");
 
-    if (groomName && brideName) {
+    if (brideName && groomName) {
       element.replaceChildren(
-        document.createTextNode(groomName),
+        document.createTextNode(brideName),
         document.createTextNode(" "),
         createElement("span", "", "&"),
         document.createTextNode(" "),
-        document.createTextNode(brideName),
+        document.createTextNode(groomName),
       );
-    } else if (groomName) {
-      element.replaceChildren(document.createTextNode(groomName));
     } else if (brideName) {
       element.replaceChildren(document.createTextNode(brideName));
+    } else if (groomName) {
+      element.replaceChildren(document.createTextNode(groomName));
     }
   }
 
@@ -102,7 +102,11 @@ Object.entries(config.theme).forEach(([name, value]) => {
 
     selectAll("[data-bind]").forEach((element) => {
       const value = getValue(element.dataset.bind);
-      element.textContent = value ?? "";
+      if (typeof value === "string" && value.includes("<")) {
+        element.innerHTML = value;
+      } else {
+        element.textContent = value ?? "";
+      }
     });
 
     setName(select("#brideName"), config.couple.bride);
@@ -155,9 +159,11 @@ Object.entries(config.theme).forEach(([name, value]) => {
       const time = createElement("time", "", item.time);
       const details = createElement("div");
 
+      const p = createElement("p", "", item.note);
+
       details.append(
         createElement("h3", "", item.title),
-        createElement("p", "", item.note),
+        p,
       );
 
       article.append(number, time, details);

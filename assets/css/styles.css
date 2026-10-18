@@ -458,15 +458,25 @@ main {
 }
 
 .hero-welcome {
-  font-size: .58rem;
+  font-size: .62rem;
   font-weight: 600;
   white-space: pre-line;
   letter-spacing: .16em;
   margin: 0 0 20px;
   text-transform: uppercase;
-  line-height: 1.4;
-    opacity: .8;
+  line-height: 1.5;
+  opacity: .9;
+}
 
+.hero-welcome .hero-event-title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  color: var(--champagne);
+  margin: 4px 0;
+  text-transform: uppercase;
 }
 
 .couple-names {
@@ -505,8 +515,10 @@ main {
 .couple-names small {
   display: block;
   font-family: var(--font-display);
-  font-size: .82rem;
+  font-size: .84rem;
   font-style: italic;
+  font-weight: 600;
+  letter-spacing: .02em;
   line-height: 1.2;
 }
 
@@ -1156,14 +1168,13 @@ cursor: pointer;
 
 .timeline p {
   font-family: var(--font-display);
-  font-size: .85rem;
+  font-size: .92rem;
   font-style: italic;
+  font-weight: 600;
+  letter-spacing: .01em;
   margin: 0;
-  color: color-mix(
-    in srgb,
-    var(--plum) 68%,
-    var(--ivory)
-    );
+  color: var(--plum);
+  opacity: 1;
 }
 
 /* ==================== VENUE ==================== */
@@ -1237,18 +1248,20 @@ cursor: pointer;
 .venue-inner h2 {
   color: var(--ivory);
   font-size: clamp(4rem, 11vw, 6.6rem);
+  font-weight: 400;
 }
 
 .venue-inner p {
   font-family: var(--font-display);
   font-size: 1rem;
+  font-weight: 600;
   line-height: 1.7;
   margin: 20px auto 31px;
   max-width: 480px;
-  opacity: .78;
+  opacity: .92;
   color: color-mix(
     in srgb,
-    var(--ivory) 78%,
+    var(--ivory) 90%,
     transparent
     );
 }
@@ -1447,15 +1460,13 @@ cursor: pointer;
 
   margin-bottom: 15px;
 
-  color: color-mix(
-    in srgb,
-    var(--plum) 65%,
-    var(--ivory)
-  );
+  color: var(--plum);
 
   font-family: var(--font-display);
   font-size: .95rem;
   font-style: italic;
+  font-weight: 600;
+  letter-spacing: .02em;
 }
 
 .event-map-link {
@@ -2338,6 +2349,7 @@ textarea:focus-visible {
   font-size: clamp(2.6rem, 7vw, 4.2rem);
   font-weight: 400;
   line-height: .95;
+  opacity: 1;
 }
 
 /* Address */
@@ -2349,11 +2361,13 @@ textarea:focus-visible {
   margin: 24px auto 32px;
   color: color-mix(
     in srgb,
-    var(--ivory) 70%,
+    var(--ivory) 90%,
     transparent
     );
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: .02em;
   line-height: 1.6;
 }
 
@@ -2501,16 +2515,15 @@ textarea:focus-visible {
 }
 
 .timeline p {
-  color: color-mix(
-    in srgb,
-    var(--plum) 60%,
-    var(--ivory)
-  );
+  color: var(--plum);
   font-family: var(--font-display);
-  font-size: .8rem;
+  font-size: .92rem;
   font-style: italic;
-  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: .01em;
+  line-height: 1.45;
   margin: 0;
+  opacity: 1;
 }
 
 @media (max-width: 600px) {
@@ -2781,42 +2794,128 @@ textarea:focus-visible {
 
 .awaiting-card {
   position: relative;
-  max-width: 820px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 60px 32px;
+  padding: 85px 36px 65px;
   text-align: center;
   background: radial-gradient(
-    circle at 50% 0%,
-    color-mix(in srgb, var(--mauve) 16%, transparent),
-    transparent 45%
-  ), var(--ivory);
-  border: 1px solid color-mix(in srgb, var(--champagne) 45%, transparent);
-  box-shadow: 0 16px 40px color-mix(in srgb, var(--plum) 8%, transparent);
+    ellipse at 50% 0%,
+    #FFFDF9 0%,
+    var(--ivory) 65%,
+    #EBD9C1 100%
+  );
+  border: 1px solid color-mix(in srgb, var(--champagne) 60%, transparent);
+  border-radius: 340px 340px 24px 24px;
+  box-shadow: 
+    0 24px 60px color-mix(in srgb, var(--plum) 12%, transparent),
+    inset 0 0 60px color-mix(in srgb, var(--champagne) 15%, transparent);
 }
 
 .awaiting-card::before {
   content: "";
   position: absolute;
-  inset: 10px;
-  border: 1px solid color-mix(in srgb, var(--champagne) 24%, transparent);
+  inset: 12px;
+  border: 1px solid color-mix(in srgb, var(--champagne) 38%, transparent);
+  border-radius: inherit;
   pointer-events: none;
 }
 
 .awaiting-card .eyebrow {
   position: relative;
   z-index: 1;
-  color: var(--champagne);
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--mauve);
 }
 
 .awaiting-card h2 {
   position: relative;
   z-index: 1;
-  margin: 12px 0 32px;
+  margin: 10px 0 0;
   color: var(--plum);
   font-family: var(--font-display);
-  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-size: clamp(2rem, 5.5vw, 3rem);
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.15;
+}
+
+.awaiting-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 14px auto 26px;
+  color: var(--champagne);
+  position: relative;
+  z-index: 1;
+}
+
+.awaiting-divider::before,
+.awaiting-divider::after {
+  content: "";
+  width: 44px;
+  height: 1px;
+  background: color-mix(in srgb, var(--champagne) 65%, transparent);
+}
+
+.awaiting-divider span {
+  font-size: 0.65rem;
+}
+
+.remembrance-names {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.remembrance-name {
+  margin: 0;
+  color: var(--plum);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3.8vw, 1.55rem);
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+}
+
+.remembrance-ampersand {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--champagne);
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.remembrance-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  max-width: 360px;
+  margin: 40px auto 38px;
+  color: var(--champagne);
+  position: relative;
+  z-index: 1;
+}
+
+.remembrance-separator::before,
+.remembrance-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: color-mix(in srgb, var(--champagne) 55%, transparent);
+}
+
+.remembrance-separator span {
+  font-size: 0.72rem;
 }
 
 .awaiting-list {
@@ -2825,7 +2924,7 @@ textarea:focus-visible {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   position: relative;
   z-index: 1;
 }
@@ -2833,10 +2932,11 @@ textarea:focus-visible {
 .awaiting-list li {
   color: var(--plum);
   font-family: var(--font-display);
-  font-size: clamp(1.1rem, 3.4vw, 1.4rem);
+  font-size: clamp(1.15rem, 3.5vw, 1.45rem);
   letter-spacing: 0.03em;
   font-style: italic;
-  line-height: 1.4;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .awaiting-list li::after {
@@ -2845,8 +2945,8 @@ textarea:focus-visible {
   font-size: 0.65rem;
   font-style: normal;
   color: var(--champagne);
-  margin-top: 10px;
-  opacity: 0.65;
+  margin-top: 12px;
+  opacity: 0.75;
 }
 
 .awaiting-list li:last-child::after {
@@ -2855,6 +2955,11 @@ textarea:focus-visible {
 
 @media (max-width: 600px) {
   .awaiting-card {
-    padding: 44px 20px;
+    padding: 60px 20px 45px;
+    border-radius: 220px 220px 18px 18px;
+  }
+
+  .remembrance-separator {
+    margin: 30px auto;
   }
 }
